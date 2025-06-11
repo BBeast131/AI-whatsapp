@@ -17,3 +17,4 @@ export default class BrowserAgentProvider {
 		return result.output; // Return the final text instead of result.output
 	};
 }
+
