@@ -14,8 +14,6 @@ export default class BrowserAgentProvider {
 	fetch = async (query) => {
 		const executor = await initializeAgentExecutor(this.tools, this.model, "zero-shot-react-description", true);
 		const result = await executor.call({ input: query });
-
 		return result.output; // Return the final text instead of result.output
 	};
 }
-
