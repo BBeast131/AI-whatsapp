@@ -17,7 +17,6 @@ async function ttsRequest(text: string): Promise<Buffer | null> {
 			text
 		})
 	};
-
 	try {
 		const response = await fetch(url, options);
 		const audioBuffer = await response.arrayBuffer();
