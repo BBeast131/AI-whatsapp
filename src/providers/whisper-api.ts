@@ -25,5 +25,4 @@ async function transcribeWhisperApi(audioBlob: Blob): Promise<{ text: string; la
 	const transcription = await response.json();
 	return transcription;
 }
-
 export { transcribeWhisperApi };
